@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(allActivities.activities, id:\.title) {item in
+                ForEach(allActivities.items, id:\.title) {item in
                     Text(item.title)
                 }
                 .onDelete(perform: removeItems)
@@ -34,7 +34,7 @@ struct ContentView: View {
     }
     
     func removeItems(at offsets: IndexSet) {
-        allActivities.activities.remove(atOffsets: offsets)
+        allActivities.items.remove(atOffsets: offsets)
     }
 }
 

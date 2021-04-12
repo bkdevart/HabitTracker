@@ -22,9 +22,9 @@ struct AddView: View {
             .navigationBarTitle("Add new habit")
             .navigationBarItems(trailing:
                 Button("Save") {
-                    if let actualAmount = Int(self.description) {
+                    if self.description != "" {
                         let item = Activity(title: self.title, description: self.description)
-                        self.activities.activities.append(item)
+                        self.activities.items.append(item)
                         self.presentationMode.wrappedValue.dismiss()
                     }
                 }
