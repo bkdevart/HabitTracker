@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AddView: View {
+    @Environment(\.presentationMode) var presentationMode
     @ObservedObject var activities: Activities
     @State private var title = ""
     @State private var description = ""
@@ -19,6 +20,15 @@ struct AddView: View {
                 TextField("Description", text: $description)
             }
             .navigationBarTitle("Add new habit")
+            .navigationBarItems(trailing:
+                Button("Save") {
+                    if let actualAmount = Int(self.description) {
+                        let item = Activity(title: self.title, description: self.description)
+                        self.activities.activities.append(item)
+                        self.presentationMode.wrappedValue.dismiss()
+                    }
+                }
+            )
         }
     }
 }
