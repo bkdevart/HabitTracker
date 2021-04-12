@@ -7,11 +7,12 @@
 
 import Foundation
 
-class Activities: ObservableObject {
-    @Published var activities = [Activity]()
-}
-
 struct Activity {
     var title: String
     var description: String
 }
+
+class Activities: ObservableObject {
+    @Published var activities = [Activity]()
+}
+

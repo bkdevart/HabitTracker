@@ -8,11 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject private var activities = Activities()
+    @ObservedObject private var allActivities = Activities()
     
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List {
+                ForEach(allActivities.activities, id:\.title) {item in
+                    Text(item.title)
+                }
+                .onDelete(perform: removeItems)
+            }
+            .navigationBarTitle("Habits")
+            .navigationBarItems(trailing:
+                Button(action: {
+                    let newActivity = Activity(title: "Test", description: "Personal")
+                    self.allActivities.activities.append(newActivity)
+                }) {
+                    Image(systemName: "plus")
+                }
+            )
+        }
+    }
+    
+    func removeItems(at offsets: IndexSet) {
+        allActivities.activities.remove(atOffsets: offsets)
     }
 }
 
