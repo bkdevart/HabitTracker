@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CAC5C73B262475290008B88E /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC5C73A262475290008B88E /* AddView.swift */; };
+		CAC5C73E26251ED50008B88E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC5C73D26251ED50008B88E /* DetailView.swift */; };
 		CAFC5BFB2623BFEF005D7CA4 /* HabitTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFC5BFA2623BFEF005D7CA4 /* HabitTrackerApp.swift */; };
 		CAFC5BFD2623BFEF005D7CA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFC5BFC2623BFEF005D7CA4 /* ContentView.swift */; };
 		CAFC5BFF2623BFF0005D7CA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAFC5BFE2623BFF0005D7CA4 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		CAC5C73A262475290008B88E /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		CAC5C73D26251ED50008B88E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		CAFC5BF72623BFEF005D7CA4 /* HabitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAFC5BFA2623BFEF005D7CA4 /* HabitTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerApp.swift; sourceTree = "<group>"; };
 		CAFC5BFC2623BFEF005D7CA4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				CAFC5BFA2623BFEF005D7CA4 /* HabitTrackerApp.swift */,
 				CAFC5BFC2623BFEF005D7CA4 /* ContentView.swift */,
+				CAC5C73D26251ED50008B88E /* DetailView.swift */,
 				CAC5C73A262475290008B88E /* AddView.swift */,
 				CAFC5C0E2623C2EE005D7CA4 /* Activities.swift */,
 				CAFC5BFE2623BFF0005D7CA4 /* Assets.xcassets */,
@@ -147,6 +150,7 @@
 				CAC5C73B262475290008B88E /* AddView.swift in Sources */,
 				CAFC5BFD2623BFEF005D7CA4 /* ContentView.swift in Sources */,
 				CAFC5BFB2623BFEF005D7CA4 /* HabitTrackerApp.swift in Sources */,
+				CAC5C73E26251ED50008B88E /* DetailView.swift in Sources */,
 				CAFC5C0F2623C2EE005D7CA4 /* Activities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -23,7 +23,9 @@ struct AddView: View {
             .navigationBarItems(trailing:
                 Button("Save") {
                     if self.description != "" {
-                        let item = Activity(title: self.title, description: self.description)
+                        let item = Activity(title: self.title,
+                                            description: self.description,
+                                            times: 1)
                         self.activities.items.append(item)
                         self.presentationMode.wrappedValue.dismiss()
                     }
