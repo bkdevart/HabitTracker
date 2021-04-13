@@ -13,11 +13,11 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(allActivities.items, id:\.title) {item in
-                    Text(item.title)
+            List(allActivities.items) { activity in
+                NavigationLink(destination: DetailView(activity: activity)) {
+                    Text(activity.title)
                 }
-                .onDelete(perform: removeItems)
+//                .onDelete(perform: removeItems)
             }
             .navigationBarTitle("Habits")
             .navigationBarItems(trailing:
